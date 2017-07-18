@@ -1,2 +1,5 @@
 class Skill < ApplicationRecord
+
 end
+=======
+
