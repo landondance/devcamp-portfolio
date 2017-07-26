@@ -11,6 +11,19 @@ class BlogsController < ApplicationController
   # GET /blogs/1.json
   def show
   end
+class BlogsController < ApplicationController
+  before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
+
+  # GET /blogs
+  # GET /blogs.json
+  def index
+    @blogs = Blog.all
+  end
+
+  # GET /blogs/1
+  # GET /blogs/1.json
+  def show
+  end
 
   # GET /blogs/new
   def new
