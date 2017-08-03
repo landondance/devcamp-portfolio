@@ -1,8 +1,5 @@
 @import "bootstrap";
-
-
 @import "gritter";
-
 
 /*
  * Globals
@@ -34,6 +31,11 @@ a:hover {
 html,
 body {
   height: 100%;
+
+
+html,
+body {
+  height: 100%;
   background-color: #333;
 
 
@@ -42,10 +44,14 @@ body {
   height: 100%;
   font-family: 'Lato', sans-serif;
 
+
 }
 body {
   color: #fff;
   text-align: center;
+
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+
 
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 
@@ -58,6 +64,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   font-family: 'Roboto Slab', serif;
+
 
 }
 
@@ -181,10 +188,13 @@ h6, .h6 {
   .masthead,
   .mastfoot,
   .cover-container {
+    width: 55rem;
+
 
     width: 55rem;
 
     width: 65rem;
+
 
   }
 }
@@ -216,7 +226,6 @@ h6, .h6 {
   margin-left: 15px;
   margin-right: 15px;
 
-
 }
 
 #background {
@@ -237,6 +246,7 @@ h6, .h6 {
 .app-footer {
   color: white;
 }
+
 
 .tech-news {
   color: black;
@@ -278,3 +288,4 @@ h6, .h6 {
   margin-bottom: 10px;
 
 }
+
