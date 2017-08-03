@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    DevcampViewTool::Renderer.copyright 'Jordan Hudgens', 'All rights reserved'
+    DevcampViewTool::Renderer.copyright 'Landon Dance', 'All rights reserved'
   end
 
   def nav_items
@@ -36,11 +36,11 @@ module ApplicationHelper
       },
       {
         url: blogs_path,
-        title: 'Blog'
+        title: 'My Blog'
       },
       {
         url: portfolios_path,
-        title: 'Portfolio'
+        title: 'My Portfolio'
       },
     ]
   end
