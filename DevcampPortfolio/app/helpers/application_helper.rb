@@ -36,11 +36,11 @@ module ApplicationHelper
       },
       {
         url: blogs_path,
-        title: 'My Blog'
+        title: 'Blog'
       },
       {
         url: portfolios_path,
-        title: 'My Portfolio'
+        title: 'Portfolio'
       },
     ]
   end
@@ -57,6 +57,18 @@ module ApplicationHelper
 
   def active? path
     "active" if current_page? path
+  end
+
+  def alerts
+    alert = (flash[:alert] || flash[:error] || flash[:notice])
+
+    if alert
+      alert_generator alert
+    end
+  end
+
+  def alert_generator msg
+    js add_gritter(msg, title: "Landon Dance Portfolio", sticky: false)
   end
 
 end
